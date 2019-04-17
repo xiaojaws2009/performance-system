@@ -1,0 +1,119 @@
+<?php include_once(dirname(__FILE__) . "/../header.html");?>
+
+<article class="page-container">
+	<form action="" method="post" class="form form-horizontal" id="form-member-add">
+		<div class="row cl">
+			<label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>&nbsp;名称：</label>
+			<div class="formControls col-xs-9 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="manager_name" name="manager_name">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>&nbsp;账号：</label>
+			<div class="formControls col-xs-9 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="account" name="account">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>&nbsp;初始密码：</label>
+			<div class="formControls col-xs-9 col-sm-9">
+				<input type="password" class="input-text" autocomplete="off" value="" placeholder="密码" id="password" name="password">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>&nbsp;确认密码：</label>
+			<div class="formControls col-xs-9 col-sm-9">
+				<input type="password" class="input-text" autocomplete="off"  placeholder="确认密码" id="password2" name="password2">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>&nbsp;部门：</label>
+			<div class="formControls col-xs-9 col-sm-9"> <span class="select-box" style="width:150px;">
+			<select class="select" name="department_id" id="department_id" size="1">
+				<?php foreach($departmentList as $item){?>
+				<option value="<?php echo $item['id']?>"><?php echo $item['name']?></option>
+				<?php }?>
+			</select>
+			</span> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>&nbsp;组权限：</label>
+			<div class="formControls col-xs-9 col-sm-9"> <span class="select-box" style="width:150px;">
+			<select class="select" name="group_id" id="group_id" size="1">
+				<?php foreach($groupList as $item){?>
+				<option value="<?php echo $item['id']?>"><?php echo $item['name']?></option>
+				<?php }?>
+			</select>
+			</span> </div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-9 col-sm-9 col-xs-offset-3 col-sm-offset-3">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</article>
+
+<?php include_once(dirname(__FILE__) . "/../footer.html");?>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#form-member-add").validate({
+            rules:{
+                manager_name:{
+                    required:true,
+                    minlength:2,
+                    maxlength:16
+                },
+                account:{
+                    required:true,
+                    minlength:4,
+                    maxlength:16
+                },
+                password:{
+                    required:true,
+                },
+                password2:{
+                    required:true,
+                    equalTo: "#password"
+                },
+                department_id:{
+                    required:true,
+                },
+                group_id:{
+                    required:true,
+                },
+            },
+            submitHandler:function(form){
+                var name = $('#manager_name').val();
+                var account = $('#account').val();
+                var password = $('#password').val();
+                var department_id = $('#department_id').val();
+                var group_id = $('#group_id').val();
+                $.ajax({
+                    type: 'POST',
+                    url: '',
+                    data : {'name':name,'account':account,'password':password,'department_id':department_id,'group_id':group_id},
+                    dataType: 'json',
+                    async: false,
+                    success: function(data){
+                        if(data.code != 0){
+                            layer.msg('添加失败!['+data.msg+']',{icon: 2,time:2000});
+						}else{
+                            layer.msg('添加成功!',{icon: 1,time:2000});
+                            setTimeout(function(){
+                                parent.location.reload();
+                                layer_close();
+							},2000);
+						}
+                    },
+                    error:function(data) {
+                        console.log(data.msg);
+                    },
+                });
+            }
+        });
+    });
+</script>

@@ -1,0 +1,70 @@
+<?php include_once(dirname(__FILE__) . "/../header.html");?>
+
+<nav class="breadcrumb">
+	<i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> <?php echo $controllerName?> <span class="c-gray en">&gt;</span> <?php echo $actionName?> <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+		<span class="l">
+			<a href="javascript:;" onclick="member_add('投票','add','650','370')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 投票</a>
+		</span>
+	</div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-hover table-bg table-sort">
+			<thead>
+			<tr class="text-c">
+				<th width="100">年份</th>
+				<th width="100">季度</th>
+				<th>投票经理人数</th>
+				<th>参与投票人数</th>
+				<th width="120">工作能力</th>
+				<th width="120">态度</th>
+				<th width="120">领导力</th>
+				<th width="120">投票总分</th>
+			</tr>
+			</thead>
+			<tbody>
+			<?php if(!empty($row)){
+			foreach($row as $item){ ?>
+			<tr class="text-c">
+				<td><?php echo $item['year']?></td>
+				<td><u style="cursor:pointer" class="text-primary" onclick="member_edit('投票详情','detail/year/<?php echo $item['year']?>/quarter/<?php echo $item['quarter']?>')">
+					<?php echo $quarterList[$item['quarter']]?>
+				</u></td>
+				<td><?php echo $item['manager_num']?></td>
+				<td><?php echo $item['employee_num']?></td>
+				<td><?php echo $item['ability_score']?></td>
+				<td><?php echo $item['attitude_score']?></td>
+				<td><?php echo $item['leadership_score']?></td>
+				<td><?php echo $item['total_score']?></td>
+			</tr>
+			<?php }
+			} ?>
+			</tbody>
+		</table>
+	</div>
+</div>
+<?php include_once(dirname(__FILE__) . "/../footer.html");?>
+
+<script type="text/javascript" src="/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.table-sort').dataTable({
+            "aaSorting": [[0, "desc"]],//默认第几个排序
+            "bStateSave": true,//状态保存
+        });
+    });
+	/*详细*/
+    function member_edit(title,url){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+	/*添加*/
+    function member_add(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+</script>

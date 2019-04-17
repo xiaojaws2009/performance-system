@@ -1,0 +1,9 @@
+{
+    "name": "root/joy-yaf",
+    "require": {
+        "catfan/Medoo": "^1.5",
+        "php-curl-class/php-curl-class": "^8.1",
+        "workerman/workerman": "^3.5",
+        "react/stomp": "0.1.*"
+    }
+}

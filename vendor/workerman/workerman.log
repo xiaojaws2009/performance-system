@@ -1,0 +1,703 @@
+2018-08-23 17:27:49 pid:75683 Workerman[main.php] start in DEBUG mode
+2018-08-23 17:27:55 pid:75683 Workerman[main.php] stopping ...
+2018-08-23 17:27:55 pid:75683 Workerman[main.php] has been stopped
+2018-08-23 17:30:42 pid:75721 Workerman[main.php] start in DEBUG mode
+2018-08-23 17:31:55 pid:75721 Workerman[main.php] stopping ...
+2018-08-23 17:31:55 pid:75721 Workerman[main.php] has been stopped
+2018-08-23 17:31:58 pid:75727 Workerman[main.php] start in DEBUG mode
+2018-08-23 17:32:00 pid:75727 Workerman[main.php] stopping ...
+2018-08-23 17:32:00 pid:75727 Workerman[main.php] has been stopped
+2018-08-23 17:32:05 pid:75729 Workerman[main.php] start in DEBUG mode
+2018-08-23 17:32:08 pid:75729 Workerman[main.php] stopping ...
+2018-08-23 17:32:08 pid:75729 Workerman[main.php] has been stopped
+2018-08-23 17:32:10 pid:75731 Workerman[main.php] start in DEBUG mode
+2018-08-23 17:32:12 pid:75731 Workerman[main.php] stopping ...
+2018-08-23 17:32:12 pid:75731 Workerman[main.php] has been stopped
+2018-08-23 17:32:14 pid:75733 Workerman[main.php] start in DAEMON mode
+2018-08-23 17:32:20 pid:75737 Workerman[main.php] restart 
+2018-08-23 17:32:20 pid:75737 Workerman[main.php] is stopping ...
+2018-08-23 17:32:20 pid:75735 Workerman[main.php] stopping ...
+2018-08-23 17:32:20 pid:75735 Workerman[main.php] has been stopped
+2018-08-23 17:32:20 pid:75737 Workerman[main.php] stop success
+2018-08-23 17:32:21 pid:75737 Workerman[main.php] stopping ...
+2018-08-23 17:32:21 pid:75737 Workerman[main.php] has been stopped
+2018-08-23 17:32:22 pid:75740 Workerman[main.php] start in DAEMON mode
+2018-08-23 17:32:29 pid:75744 Workerman[main.php] reload 
+2018-08-23 17:32:29 pid:75742 Workerman[main.php] reloading
+2018-08-23 17:32:34 pid:75746 Workerman[main.php] kill 
+2018-08-23 17:32:40 pid:75759 Workerman[main.php] stop 
+2018-08-23 17:32:40 pid:75759 Workerman[main.php] is stopping ...
+2018-08-23 17:32:40 pid:75742 Workerman[main.php] stopping ...
+2018-08-23 17:32:40 pid:75742 Workerman[main.php] has been stopped
+2018-08-23 17:32:40 pid:75759 Workerman[main.php] stop success
+2018-08-23 18:04:59 pid:78456 Workerman[main.php] stop 
+2018-08-23 18:04:59 pid:78456 Workerman[main.php] not run
+2018-08-23 18:05:02 pid:78457 Workerman[main.php] start in DAEMON mode
+2018-08-23 18:05:11 pid:78461 Workerman[main.php] start in DEBUG mode
+2018-08-23 18:05:11 pid:78461 Workerman[main.php] already running
+2018-08-23 18:05:18 pid:78462 Workerman[main.php] restart 
+2018-08-23 18:05:18 pid:78462 Workerman[main.php] is stopping ...
+2018-08-23 18:05:18 pid:78459 Workerman[main.php] stopping ...
+2018-08-23 18:05:18 pid:78459 Workerman[main.php] has been stopped
+2018-08-23 18:05:18 pid:78462 Workerman[main.php] stop success
+2018-08-23 18:05:20 pid:78462 Workerman[main.php] stopping ...
+2018-08-23 18:05:20 pid:78462 Workerman[main.php] has been stopped
+2018-08-24 09:35:09 pid:85763 Workerman[main.php] start in DEBUG mode
+2018-08-24 09:35:17 pid:85763 Workerman[main.php] stopping ...
+2018-08-24 09:35:17 pid:85763 Workerman[main.php] has been stopped
+2018-09-06 10:49:02 pid:26982 Workerman[main.php] start in DEBUG mode
+2018-09-06 10:49:17 pid:26983 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:150
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 10:49:17 pid:26983 Worker[26983] process terminated
+2018-09-06 10:49:17 pid:26982 worker[none:26983] exit with status 64000
+2018-09-06 10:49:26 pid:26982 Workerman[main.php] stopping ...
+2018-09-06 10:49:26 pid:26982 Workerman[main.php] has been stopped
+2018-09-06 10:50:08 pid:27016 Workerman[main.php] start in DEBUG mode
+2018-09-06 10:50:11 pid:27017 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:151
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 10:50:11 pid:27017 Worker[27017] process terminated
+2018-09-06 10:50:11 pid:27016 worker[none:27017] exit with status 64000
+2018-09-06 10:51:10 pid:27016 Workerman[main.php] stopping ...
+2018-09-06 10:51:10 pid:27016 Workerman[main.php] has been stopped
+2018-09-06 10:51:12 pid:27039 Workerman[main.php] start in DEBUG mode
+2018-09-06 10:51:15 pid:27040 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:151
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 10:51:15 pid:27040 Worker[27040] process terminated
+2018-09-06 10:51:15 pid:27039 worker[none:27040] exit with status 64000
+2018-09-06 10:59:25 pid:27039 Workerman[main.php] stopping ...
+2018-09-06 10:59:25 pid:27039 Workerman[main.php] has been stopped
+2018-09-06 10:59:32 pid:27124 Workerman[main.php] start in DEBUG mode
+2018-09-06 10:59:37 pid:27125 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:151
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 10:59:37 pid:27125 Worker[27125] process terminated
+2018-09-06 10:59:37 pid:27124 worker[none:27125] exit with status 64000
+2018-09-06 11:00:22 pid:27124 Workerman[main.php] stopping ...
+2018-09-06 11:00:22 pid:27124 Workerman[main.php] has been stopped
+2018-09-06 11:00:24 pid:27148 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:00:26 pid:27149 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:151
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 11:00:26 pid:27149 Worker[27149] process terminated
+2018-09-06 11:00:26 pid:27148 worker[none:27149] exit with status 64000
+2018-09-06 11:00:36 pid:27148 Workerman[main.php] stopping ...
+2018-09-06 11:00:36 pid:27148 Workerman[main.php] has been stopped
+2018-09-06 11:01:09 pid:27185 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:01:11 pid:27186 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:151
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 11:01:11 pid:27186 Worker[27186] process terminated
+2018-09-06 11:01:11 pid:27185 worker[none:27186] exit with status 64000
+2018-09-06 11:01:24 pid:27185 Workerman[main.php] stopping ...
+2018-09-06 11:01:24 pid:27185 Workerman[main.php] has been stopped
+2018-09-06 11:01:28 pid:27188 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:01:31 pid:27189 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:151
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 11:01:31 pid:27189 Worker[27189] process terminated
+2018-09-06 11:01:31 pid:27188 worker[none:27189] exit with status 64000
+2018-09-06 11:18:47 pid:27188 Workerman[main.php] stopping ...
+2018-09-06 11:18:48 pid:27188 Workerman[main.php] has been stopped
+2018-09-06 11:18:49 pid:27334 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:18:54 pid:27335 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:151
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 11:18:54 pid:27335 Worker[27335] process terminated
+2018-09-06 11:18:54 pid:27334 worker[none:27335] exit with status 64000
+2018-09-06 11:19:35 pid:27336 Error: Call to a member function setParam() on null in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:151
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33, 2, Resource id #33)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1503): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(483): Workerman\Worker::monitorWorkers()
+#12 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#13 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#14 {main}
+2018-09-06 11:19:35 pid:27336 Worker[27336] process terminated
+2018-09-06 11:19:35 pid:27334 worker[none:27336] exit with status 64000
+2018-09-06 11:19:46 pid:27334 Workerman[main.php] stopping ...
+2018-09-06 11:19:46 pid:27334 Workerman[main.php] has been stopped
+2018-09-06 11:28:21 pid:27529 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:28:25 pid:27530 Error: Call to a member function setParam() on array in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:152
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 11:28:25 pid:27530 Worker[27530] process terminated
+2018-09-06 11:28:25 pid:27529 worker[none:27530] exit with status 64000
+2018-09-06 11:30:42 pid:27529 Workerman[main.php] stopping ...
+2018-09-06 11:30:42 pid:27529 Workerman[main.php] has been stopped
+2018-09-06 11:30:44 pid:27556 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:30:47 pid:27557 Error: Call to a member function setParam() on array in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:152
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#1 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#10 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#11 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#12 {main}
+2018-09-06 11:30:47 pid:27557 Worker[27557] process terminated
+2018-09-06 11:30:47 pid:27556 worker[none:27557] exit with status 64000
+2018-09-06 11:30:55 pid:27556 Workerman[main.php] stopping ...
+2018-09-06 11:30:55 pid:27556 Workerman[main.php] has been stopped
+2018-09-06 11:31:09 pid:27572 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:31:15 pid:27573 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(157): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 11:31:15 pid:27573 Worker[27573] process terminated
+2018-09-06 11:31:15 pid:27572 worker[none:27573] exit with status 64000
+2018-09-06 11:31:17 pid:27572 Workerman[main.php] stopping ...
+2018-09-06 11:31:17 pid:27572 Workerman[main.php] has been stopped
+2018-09-06 11:31:43 pid:27600 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:31:45 pid:27601 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(157): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 11:31:45 pid:27601 Worker[27601] process terminated
+2018-09-06 11:31:45 pid:27600 worker[none:27601] exit with status 64000
+2018-09-06 11:36:08 pid:27600 Workerman[main.php] stopping ...
+2018-09-06 11:36:08 pid:27600 Workerman[main.php] has been stopped
+2018-09-06 11:36:10 pid:27660 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:36:12 pid:27661 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:62
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(157): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 11:36:12 pid:27661 Worker[27661] process terminated
+2018-09-06 11:36:12 pid:27660 worker[none:27661] exit with status 64000
+2018-09-06 11:36:34 pid:27660 Workerman[main.php] stopping ...
+2018-09-06 11:36:34 pid:27660 Workerman[main.php] has been stopped
+2018-09-06 11:36:36 pid:27680 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:36:38 pid:27681 Error: Call to a member function getQuery() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:62
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(157): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 11:36:38 pid:27681 Worker[27681] process terminated
+2018-09-06 11:36:38 pid:27680 worker[none:27681] exit with status 64000
+2018-09-06 11:37:58 pid:27680 Workerman[main.php] stopping ...
+2018-09-06 11:37:58 pid:27680 Workerman[main.php] has been stopped
+2018-09-06 11:37:59 pid:27715 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:38:02 pid:27716 Error: Call to a member function isGet() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:62
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(157): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 11:38:02 pid:27716 Worker[27716] process terminated
+2018-09-06 11:38:02 pid:27715 worker[none:27716] exit with status 64000
+2018-09-06 11:38:52 pid:27715 Workerman[main.php] stopping ...
+2018-09-06 11:38:52 pid:27715 Workerman[main.php] has been stopped
+2018-09-06 11:38:53 pid:27746 Workerman[main.php] start in DEBUG mode
+2018-09-06 11:38:56 pid:27747 Error: Call to a member function getQuery() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:63
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(157): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 11:38:56 pid:27747 Worker[27747] process terminated
+2018-09-06 11:38:56 pid:27746 worker[none:27747] exit with status 64000
+2018-09-06 12:25:25 pid:27746 Workerman[main.php] stopping ...
+2018-09-06 12:25:25 pid:27746 Workerman[main.php] has been stopped
+2018-09-06 12:25:27 pid:28143 Workerman[main.php] start in DEBUG mode
+2018-09-06 12:26:50 pid:28143 Workerman[main.php] stopping ...
+2018-09-06 12:26:50 pid:28143 Workerman[main.php] has been stopped
+2018-09-06 12:26:51 pid:28181 Workerman[main.php] start in DEBUG mode
+2018-09-06 12:28:51 pid:28181 Workerman[main.php] stopping ...
+2018-09-06 12:28:51 pid:28181 Workerman[main.php] has been stopped
+2018-09-06 12:28:52 pid:28220 Workerman[main.php] start in DEBUG mode
+2018-09-06 12:38:42 pid:28220 Workerman[main.php] stopping ...
+2018-09-06 12:38:42 pid:28220 Workerman[main.php] has been stopped
+2018-09-06 12:38:44 pid:28302 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:16:07 pid:28302 Workerman[main.php] stopping ...
+2018-09-06 14:16:07 pid:28302 Workerman[main.php] has been stopped
+2018-09-06 14:16:09 pid:28756 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:17:05 pid:28756 Workerman[main.php] stopping ...
+2018-09-06 14:17:05 pid:28756 Workerman[main.php] has been stopped
+2018-09-06 14:17:08 pid:28777 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:35:55 pid:28777 Workerman[main.php] stopping ...
+2018-09-06 14:35:55 pid:28777 Workerman[main.php] has been stopped
+2018-09-06 14:35:57 pid:28966 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:36:58 pid:28966 Workerman[main.php] stopping ...
+2018-09-06 14:36:58 pid:28966 Workerman[main.php] has been stopped
+2018-09-06 14:37:00 pid:28997 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:38:57 pid:28997 Workerman[main.php] stopping ...
+2018-09-06 14:38:57 pid:28997 Workerman[main.php] has been stopped
+2018-09-06 14:38:59 pid:29047 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:45:41 pid:29047 Workerman[main.php] stopping ...
+2018-09-06 14:45:41 pid:29047 Workerman[main.php] has been stopped
+2018-09-06 14:45:43 pid:29229 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:45:47 pid:29230 Worker[29230] process terminated
+2018-09-06 14:46:44 pid:29229 Workerman[main.php] stopping ...
+2018-09-06 14:46:44 pid:29229 Workerman[main.php] has been stopped
+2018-09-06 14:46:46 pid:29265 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:47:53 pid:29265 Workerman[main.php] stopping ...
+2018-09-06 14:47:53 pid:29265 Workerman[main.php] has been stopped
+2018-09-06 14:47:55 pid:29304 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:50:09 pid:29304 Workerman[main.php] stopping ...
+2018-09-06 14:50:09 pid:29304 Workerman[main.php] has been stopped
+2018-09-06 14:50:11 pid:29363 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:54:24 pid:29363 Workerman[main.php] stopping ...
+2018-09-06 14:54:24 pid:29363 Workerman[main.php] has been stopped
+2018-09-06 14:54:25 pid:29440 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:56:55 pid:29440 Workerman[main.php] stopping ...
+2018-09-06 14:56:55 pid:29440 Workerman[main.php] has been stopped
+2018-09-06 14:56:56 pid:29482 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:57:15 pid:29482 Workerman[main.php] stopping ...
+2018-09-06 14:57:15 pid:29482 Workerman[main.php] has been stopped
+2018-09-06 14:57:16 pid:29501 Workerman[main.php] start in DEBUG mode
+2018-09-06 14:57:24 pid:29501 Workerman[main.php] stopping ...
+2018-09-06 14:57:24 pid:29501 Workerman[main.php] has been stopped
+2018-09-06 14:57:48 pid:29520 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:00:54 pid:29520 Workerman[main.php] stopping ...
+2018-09-06 15:00:54 pid:29520 Workerman[main.php] has been stopped
+2018-09-06 15:00:56 pid:29607 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:01:04 pid:29607 Workerman[main.php] stopping ...
+2018-09-06 15:01:04 pid:29607 Workerman[main.php] has been stopped
+2018-09-06 15:01:48 pid:29637 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:02:00 pid:29637 Workerman[main.php] stopping ...
+2018-09-06 15:02:00 pid:29637 Workerman[main.php] has been stopped
+2018-09-06 15:02:22 pid:29657 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:15:19 pid:29657 Workerman[main.php] stopping ...
+2018-09-06 15:15:19 pid:29657 Workerman[main.php] has been stopped
+2018-09-06 15:15:20 pid:29827 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:15:26 pid:29827 Workerman[main.php] stopping ...
+2018-09-06 15:15:26 pid:29827 Workerman[main.php] has been stopped
+2018-09-06 15:15:43 pid:29846 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:15:49 pid:29846 Workerman[main.php] stopping ...
+2018-09-06 15:15:49 pid:29846 Workerman[main.php] has been stopped
+2018-09-06 15:23:14 pid:29887 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:23:22 pid:29887 Workerman[main.php] stopping ...
+2018-09-06 15:23:22 pid:29887 Workerman[main.php] has been stopped
+2018-09-06 15:23:39 pid:29905 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:23:47 pid:29905 Workerman[main.php] stopping ...
+2018-09-06 15:23:47 pid:29905 Workerman[main.php] has been stopped
+2018-09-06 15:26:42 pid:29969 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:27:39 pid:29969 Workerman[main.php] stopping ...
+2018-09-06 15:27:39 pid:29969 Workerman[main.php] has been stopped
+2018-09-06 15:27:41 pid:29990 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:28:09 pid:29990 Workerman[main.php] stopping ...
+2018-09-06 15:28:09 pid:29990 Workerman[main.php] has been stopped
+2018-09-06 15:28:10 pid:30005 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:34:17 pid:30005 Workerman[main.php] stopping ...
+2018-09-06 15:34:17 pid:30005 Workerman[main.php] has been stopped
+2018-09-06 15:34:18 pid:30124 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:34:22 pid:30125 Error: Call to undefined method Yaf\Dispatcher::getResponse() in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/Workerman.php:64
+Stack trace:
+#0 [internal function]: WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(141): Yaf\Dispatcher->dispatch(Object(Yaf\Request\Simple))
+#2 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#3 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#4 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#12 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#13 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#14 {main}
+2018-09-06 15:34:22 pid:30125 Worker[30125] process terminated
+2018-09-06 15:34:22 pid:30124 worker[none:30125] exit with status 64000
+2018-09-06 15:36:25 pid:30124 Workerman[main.php] stopping ...
+2018-09-06 15:36:25 pid:30124 Workerman[main.php] has been stopped
+2018-09-06 15:36:26 pid:30169 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:37:02 pid:30169 Workerman[main.php] stopping ...
+2018-09-06 15:37:02 pid:30169 Workerman[main.php] has been stopped
+2018-09-06 15:37:03 pid:30189 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:39:25 pid:30189 Workerman[main.php] stopping ...
+2018-09-06 15:39:25 pid:30189 Workerman[main.php] has been stopped
+2018-09-06 15:39:27 pid:30235 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:54:08 pid:30235 Workerman[main.php] stopping ...
+2018-09-06 15:54:08 pid:30235 Workerman[main.php] has been stopped
+2018-09-06 15:54:10 pid:30358 Workerman[main.php] start in DEBUG mode
+2018-09-06 15:59:26 pid:30358 Workerman[main.php] stopping ...
+2018-09-06 15:59:26 pid:30358 Workerman[main.php] has been stopped
+2018-09-06 15:59:27 pid:30402 Workerman[main.php] start in DEBUG mode
+2018-09-06 16:01:08 pid:30402 Workerman[main.php] stopping ...
+2018-09-06 16:01:08 pid:30402 Workerman[main.php] has been stopped
+2018-09-06 16:01:09 pid:30445 Workerman[main.php] start in DEBUG mode
+2018-09-06 16:55:03 pid:30445 Workerman[main.php] stopping ...
+2018-09-06 16:55:03 pid:30445 Workerman[main.php] has been stopped
+2018-09-06 16:55:06 pid:31274 Workerman[main.php] start in DEBUG mode
+2018-09-06 16:55:09 pid:31275 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(148): WorkerManController->taskAction(Array)
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 16:55:09 pid:31275 Worker[31275] process terminated
+2018-09-06 16:55:09 pid:31274 worker[none:31275] exit with status 64000
+2018-09-06 17:05:21 pid:31274 Workerman[main.php] stopping ...
+2018-09-06 17:05:21 pid:31274 Workerman[main.php] has been stopped
+2018-09-06 17:05:23 pid:31404 Workerman[main.php] start in DEBUG mode
+2018-09-06 17:05:30 pid:31405 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(152): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 17:05:30 pid:31405 Worker[31405] process terminated
+2018-09-06 17:05:30 pid:31404 worker[none:31405] exit with status 64000
+2018-09-06 17:06:26 pid:31404 Workerman[main.php] stopping ...
+2018-09-06 17:06:26 pid:31404 Workerman[main.php] has been stopped
+2018-09-06 17:06:28 pid:31422 Workerman[main.php] start in DEBUG mode
+2018-09-06 17:06:33 pid:31424 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(152): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 17:06:33 pid:31424 Worker[31424] process terminated
+2018-09-06 17:06:33 pid:31422 worker[none:31424] exit with status 64000
+2018-09-06 17:06:52 pid:31422 Workerman[main.php] stopping ...
+2018-09-06 17:06:52 pid:31422 Workerman[main.php] has been stopped
+2018-09-06 17:21:46 pid:31555 Workerman[main.php] start in DEBUG mode
+2018-09-06 17:21:53 pid:31556 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(152): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 17:21:53 pid:31556 Worker[31556] process terminated
+2018-09-06 17:21:53 pid:31555 worker[none:31556] exit with status 64000
+2018-09-06 17:22:22 pid:31555 Workerman[main.php] stopping ...
+2018-09-06 17:22:22 pid:31555 Workerman[main.php] has been stopped
+2018-09-06 17:22:23 pid:31576 Workerman[main.php] start in DEBUG mode
+2018-09-06 17:22:26 pid:31577 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(152): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 17:22:26 pid:31577 Worker[31577] process terminated
+2018-09-06 17:22:26 pid:31576 worker[none:31577] exit with status 64000
+2018-09-06 17:22:54 pid:31576 Workerman[main.php] stopping ...
+2018-09-06 17:22:54 pid:31576 Workerman[main.php] has been stopped
+2018-09-06 17:22:55 pid:31598 Workerman[main.php] start in DEBUG mode
+2018-09-06 17:22:58 pid:31599 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(152): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 17:22:58 pid:31599 Worker[31599] process terminated
+2018-09-06 17:22:58 pid:31598 worker[none:31599] exit with status 64000
+2018-09-06 17:23:38 pid:31598 Workerman[main.php] stopping ...
+2018-09-06 17:23:38 pid:31598 Workerman[main.php] has been stopped
+2018-09-06 17:23:39 pid:31627 Workerman[main.php] start in DEBUG mode
+2018-09-06 17:23:42 pid:31628 Error: Call to a member function getParams() on null in /Users/xiaojuezhi/www/joy-yaf/application/modules/Demo/controllers/WorkerMan.php:61
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(153): WorkerManController->taskAction()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 17:23:42 pid:31628 Worker[31628] process terminated
+2018-09-06 17:23:42 pid:31627 worker[none:31628] exit with status 64000
+2018-09-06 17:24:22 pid:31627 Workerman[main.php] stopping ...
+2018-09-06 17:24:22 pid:31627 Workerman[main.php] has been stopped
+2018-09-06 17:24:23 pid:31655 Workerman[main.php] start in DEBUG mode
+2018-09-06 17:24:26 pid:31656 ArgumentCountError: Yaf\View\Simple::__construct() expects at least 1 parameter, 0 given in /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php:152
+Stack trace:
+#0 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(152): Yaf\View\Simple->__construct()
+#1 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(79): Worker\IServer->onMessage(Object(Workerman\Connection\TcpConnection), 'Demo/WorkerMan/...', Array)
+#2 [internal function]: Worker\IServer->Worker\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Connection/TcpConnection.php(673): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"data":{"user_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#6 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(2244): Workerman\Events\Event->loop()
+#7 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1369): Workerman\Worker->run()
+#8 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1201): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(1175): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/xiaojuezhi/www/joy-yaf/vendor/workerman/workerman/Worker.php(481): Workerman\Worker::forkWorkers()
+#11 /Users/xiaojuezhi/www/joy-yaf/application/library/Worker/IServer.php(124): Workerman\Worker::runAll()
+#12 /Users/xiaojuezhi/www/joy-yaf/public/main.php(27): Worker\IServer->run()
+#13 {main}
+2018-09-06 17:24:26 pid:31656 Worker[31656] process terminated
+2018-09-06 17:24:26 pid:31655 worker[none:31656] exit with status 64000
+2018-09-06 17:25:51 pid:31655 Workerman[main.php] stopping ...
+2018-09-06 17:25:51 pid:31655 Workerman[main.php] has been stopped
+2018-09-06 17:25:53 pid:31691 Workerman[main.php] start in DEBUG mode
+2018-09-06 17:27:00 pid:31691 Workerman[main.php] stopping ...
+2018-09-06 17:27:00 pid:31691 Workerman[main.php] has been stopped
+2018-09-06 17:27:01 pid:31723 Workerman[main.php] start in DEBUG mode
+2018-09-06 18:23:56 pid:31723 Workerman[main.php] stopping ...
+2018-09-06 18:23:56 pid:31723 Workerman[main.php] has been stopped
+2018-09-06 18:23:58 pid:32005 Workerman[main.php] start in DEBUG mode
+2018-09-06 18:24:30 pid:32005 Workerman[main.php] stopping ...
+2018-09-06 18:24:30 pid:32005 Workerman[main.php] has been stopped
+2018-09-07 09:49:06 pid:32442 Workerman[main.php] start in DEBUG mode
+2018-09-07 09:49:22 pid:32442 Workerman[main.php] stopping ...
+2018-09-07 09:49:22 pid:32442 Workerman[main.php] has been stopped
+2018-09-13 17:55:22 pid:64871 Workerman[main.php] start in DEBUG mode
+2018-09-13 17:55:24 pid:64871 Workerman[main.php] stopping ...
+2018-09-13 17:55:24 pid:64871 Workerman[main.php] has been stopped
+2018-09-13 17:55:26 pid:64873 Workerman[main.php] start in DAEMON mode
+2018-09-13 17:56:02 pid:64882 Workerman[main.php] stop 
+2018-09-13 17:56:02 pid:64882 Workerman[main.php] is stopping ...
+2018-09-13 17:56:02 pid:64875 Workerman[main.php] stopping ...
+2018-09-13 17:56:02 pid:64875 Workerman[main.php] has been stopped
+2018-09-13 17:56:02 pid:64882 Workerman[main.php] stop success

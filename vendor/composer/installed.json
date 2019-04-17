@@ -1,0 +1,440 @@
+[
+    {
+        "name": "catfan/medoo",
+        "version": "v1.5.7",
+        "version_normalized": "1.5.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/catfan/Medoo.git",
+            "reference": "8d90cba0e8ff176028847527d0ea76fe41a06ecf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/catfan/Medoo/zipball/8d90cba0e8ff176028847527d0ea76fe41a06ecf",
+            "reference": "8d90cba0e8ff176028847527d0ea76fe41a06ecf",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "php": ">=5.4"
+        },
+        "suggest": {
+            "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
+            "ext-pdo_mysql": "For MySQL or MariaDB database",
+            "ext-pdo_oci": "For Oracle database",
+            "ext-pdo_oci8": "For Oracle version 8 database",
+            "ext-pdo_pqsql": "For PostgreSQL database",
+            "ext-pdo_sqlite": "For SQLite database",
+            "ext-pdo_sqlsrv": "For MSSQL database"
+        },
+        "time": "2018-06-14T18:59:08+00:00",
+        "type": "framework",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Medoo\\": "/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Angel Lai",
+                "email": "angel@catfan.me"
+            }
+        ],
+        "description": "The lightest PHP database framework to accelerate development",
+        "homepage": "https://medoo.in",
+        "keywords": [
+            "database",
+            "lightweight",
+            "mariadb",
+            "mssql",
+            "mysql",
+            "oracle",
+            "php framework",
+            "postgresql",
+            "sql",
+            "sqlite"
+        ]
+    },
+    {
+        "name": "evenement/evenement",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/igorw/evenement.git",
+            "reference": "fa966683e7df3e5dd5929d984a44abfbd6bafe8d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/igorw/evenement/zipball/fa966683e7df3e5dd5929d984a44abfbd6bafe8d",
+            "reference": "fa966683e7df3e5dd5929d984a44abfbd6bafe8d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-05-30T15:01:08+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Evenement": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch",
+                "homepage": "http://wiedler.ch/igor/"
+            }
+        ],
+        "description": "Événement is a very simple event dispatching library for PHP 5.3",
+        "keywords": [
+            "event-dispatcher"
+        ]
+    },
+    {
+        "name": "php-curl-class/php-curl-class",
+        "version": "8.1.0",
+        "version_normalized": "8.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-curl-class/php-curl-class.git",
+            "reference": "0090c30b4348028cabf1d03427423460ca7dc4a4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/0090c30b4348028cabf1d03427423460ca7dc4a4",
+            "reference": "0090c30b4348028cabf1d03427423460ca7dc4a4",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-mbstring": "*",
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "ext-gd": "*",
+            "phpunit/phpunit": "*",
+            "squizlabs/php_codesniffer": "*"
+        },
+        "time": "2018-06-06T05:01:44+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Curl\\": "src/Curl/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Unlicense"
+        ],
+        "authors": [
+            {
+                "name": "Zach Borboa"
+            }
+        ],
+        "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.",
+        "homepage": "https://github.com/php-curl-class/php-curl-class",
+        "keywords": [
+            "api",
+            "class",
+            "client",
+            "curl",
+            "framework",
+            "http",
+            "http client",
+            "json",
+            "php",
+            "requests",
+            "rest",
+            "restful",
+            "web service",
+            "xml"
+        ]
+    },
+    {
+        "name": "react/event-loop",
+        "version": "v0.2.7",
+        "version_normalized": "0.2.7.0",
+        "target-dir": "React/EventLoop",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/event-loop.git",
+            "reference": "134b94dc555d320bd31253a215c8a65ef151a79a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/event-loop/zipball/134b94dc555d320bd31253a215c8a65ef151a79a",
+            "reference": "134b94dc555d320bd31253a215c8a65ef151a79a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "suggest": {
+            "ext-libev": "*",
+            "ext-libevent": ">=0.0.5"
+        },
+        "time": "2013-01-05T11:41:26+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "React\\EventLoop": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Event loop abstraction layer that libraries can use for evented I/O.",
+        "keywords": [
+            "event-loop"
+        ]
+    },
+    {
+        "name": "react/promise",
+        "version": "v1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/promise.git",
+            "reference": "eefff597e67ff66b719f8171480add3c91474a1e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/promise/zipball/eefff597e67ff66b719f8171480add3c91474a1e",
+            "reference": "eefff597e67ff66b719f8171480add3c91474a1e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2016-03-07T13:46:50+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "React\\Promise": "src/"
+            },
+            "files": [
+                "src/React/Promise/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Sorgalla",
+                "email": "jsorgalla@gmail.com"
+            }
+        ],
+        "description": "A lightweight implementation of CommonJS Promises/A for PHP"
+    },
+    {
+        "name": "react/socket",
+        "version": "v0.2.6",
+        "version_normalized": "0.2.6.0",
+        "target-dir": "React/Socket",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/socket.git",
+            "reference": "21e3fe670b2f18e3c6b2cb73f14e1c58fe7bca84"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/socket/zipball/21e3fe670b2f18e3c6b2cb73f14e1c58fe7bca84",
+            "reference": "21e3fe670b2f18e3c6b2cb73f14e1c58fe7bca84",
+            "shasum": ""
+        },
+        "require": {
+            "evenement/evenement": "1.0.*",
+            "php": ">=5.3.3",
+            "react/event-loop": "0.2.*",
+            "react/stream": "0.2.*"
+        },
+        "time": "2012-12-14T00:58:14+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "React\\Socket": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Library for building an evented socket server.",
+        "keywords": [
+            "Socket"
+        ]
+    },
+    {
+        "name": "react/stomp",
+        "version": "v0.1.4",
+        "version_normalized": "0.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/stomp.git",
+            "reference": "a1511df5d5c1a760b19c5be5353f1df1ba1afd7d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/stomp/zipball/a1511df5d5c1a760b19c5be5353f1df1ba1afd7d",
+            "reference": "a1511df5d5c1a760b19c5be5353f1df1ba1afd7d",
+            "shasum": ""
+        },
+        "require": {
+            "evenement/evenement": "1.0.*",
+            "php": ">=5.3.2",
+            "react/promise": "~1.0",
+            "react/socket": "0.2.*"
+        },
+        "time": "2013-04-14T22:55:39+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "React\\Stomp": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "STOMP bindings for React.",
+        "keywords": [
+            "rabbitmq",
+            "stomp"
+        ]
+    },
+    {
+        "name": "react/stream",
+        "version": "v0.2.6",
+        "version_normalized": "0.2.6.0",
+        "target-dir": "React/Stream",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/stream.git",
+            "reference": "34c1059cffb44873440135e9a86fe9ae9caf5acd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/stream/zipball/34c1059cffb44873440135e9a86fe9ae9caf5acd",
+            "reference": "34c1059cffb44873440135e9a86fe9ae9caf5acd",
+            "shasum": ""
+        },
+        "require": {
+            "evenement/evenement": "1.0.*",
+            "php": ">=5.3.3"
+        },
+        "suggest": {
+            "react/event-loop": "0.2.*",
+            "react/promise": "1.0.*"
+        },
+        "time": "2012-12-14T00:58:14+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "React\\Stream": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Basic readable and writable stream interfaces that support piping.",
+        "keywords": [
+            "pipe",
+            "stream"
+        ]
+    },
+    {
+        "name": "workerman/workerman",
+        "version": "v3.5.13",
+        "version_normalized": "3.5.13.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/walkor/Workerman.git",
+            "reference": "cf2538169af989fbba4d55be1bfc8c8d80fa71e9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/walkor/Workerman/zipball/cf2538169af989fbba4d55be1bfc8c8d80fa71e9",
+            "reference": "cf2538169af989fbba4d55be1bfc8c8d80fa71e9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "suggest": {
+            "ext-event": "For better performance. "
+        },
+        "time": "2018-07-16T02:11:10+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Workerman\\": "./"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "walkor",
+                "email": "walkor@workerman.net",
+                "homepage": "http://www.workerman.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "An asynchronous event driven PHP framework for easily building fast, scalable network applications.",
+        "homepage": "http://www.workerman.net",
+        "keywords": [
+            "asynchronous",
+            "event-loop"
+        ]
+    }
+]

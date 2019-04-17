@@ -1,0 +1,59 @@
+<?php include_once(dirname(__FILE__) . "/../header.html");?>
+<link href="/static/h-ui.admin/css/H-ui.login.css" rel="stylesheet" type="text/css" />
+<style>
+  label.error{right:0px;top:40px;}
+</style>
+
+<input type="hidden" id="TenantId" name="TenantId" value="" />
+<div class="header"></div>
+<div class="loginWraper">
+  <div class="loginBox">
+    <form class="form form-horizontal" id="loginform" action="" method="post">
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+        <div class="formControls col-xs-8">
+          <input id="account" name="account" type="text" placeholder="账户" class="input-text size-L">
+        </div>
+      </div>
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+        <div class="formControls col-xs-8">
+          <input id="password" name="password" type="password" placeholder="密码" class="input-text size-L">
+        </div>
+      </div>
+      <div class="row cl">
+        <div class="formControls col-xs-8 col-xs-offset-3">
+          <label for="online">
+            <input type="checkbox" name="online" id="online" value="">
+            使我保持登录状态</label>
+        </div>
+      </div>
+      <div class="row cl">
+        <div class="formControls col-xs-8 col-xs-offset-3">
+          <input name="" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+          <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<?php include_once(dirname(__FILE__) . "/../footer.html");?>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#loginform").validate({
+            rules:{
+                account:{
+                    required:true,
+                    minlength:2
+                },
+                password:{
+                    required:true,
+                },
+            },
+        });
+    });
+</script>

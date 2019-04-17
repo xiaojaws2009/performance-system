@@ -1,0 +1,77 @@
+<?php include_once(dirname(__FILE__) . "/../header.html");?>
+
+<nav class="breadcrumb">
+	<i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> <?php echo $controllerName?> <span class="c-gray en">&gt;</span> <?php echo $actionName?> <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<form action="" method="get" class="text-c">
+		年份：<span class="select-box inline">
+		<select name="year" class="select">
+			<?php for($i=$onYear-2;$i<=$onYear;$i++){ ?>
+			<option value="<?php echo $i;?>" <?php if($year==$i){echo "selected";}?>><?php echo $i;?></option>
+			<?php }?>
+		</select>
+		</span>
+		季度：<span class="select-box inline">
+		<select name="quarter" class="select">
+			<?php foreach($quarterList as $key=>$item){ ?>
+			<option value="<?php echo $key;?>" <?php if($quarter==$key){echo "selected";}?>><?php echo $item;?></option>
+			<?php }?>
+		</select>
+		</span>
+		<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+	</form>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-hover table-bg table-sort">
+			<thead>
+			<tr class="text-c">
+				<th width="100">年份</th>
+				<th width="100">季度</th>
+				<th>部门经理名称</th>
+				<th width="120">工作能力</th>
+				<th width="120">态度</th>
+				<th width="120">领导力</th>
+				<th width="120">总得分</th>
+			</tr>
+			</thead>
+			<tbody>
+			<?php if(!empty($row)){
+			foreach($row as $item){ ?>
+			<tr class="text-c">
+				<td><?php echo $item['year']?></td>
+				<td><?php echo $quarterList[$item['quarter']]?></td>
+				<td><?php echo $item['manager_name']?></td>
+				<td><?php echo $item['ability_score']?></td>
+				<td><?php echo $item['attitude_score']?></td>
+				<td><?php echo $item['leadership_score']?></td>
+				<td><u style="cursor:pointer" class="text-primary" onclick="member_edit('绩效详情列表','detail/id/<?php echo $item['manager_id']?>/year/<?php echo $year?>/quarter/<?php echo $quarter?>')"><?php echo $item['total_score']?></u></td>
+			</tr>
+			<?php }
+			} ?>
+			</tbody>
+		</table>
+	</div>
+</div>
+<?php include_once(dirname(__FILE__) . "/../footer.html");?>
+
+<script type="text/javascript" src="/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.table-sort').dataTable({
+            "aaSorting": [[6, "desc"]],//默认第几个排序
+            "bStateSave": true,//状态保存
+            "aoColumnDefs": [
+                {"orderable":false,"aTargets":[0,1]}// 制定列不参与排序
+            ]
+        });
+    });
+	/*详细*/
+    function member_edit(title,url){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+</script>

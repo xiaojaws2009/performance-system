@@ -1,0 +1,68 @@
+<?php include_once(dirname(__FILE__) . "/../header.html");?>
+<style>
+	.loading{width: 15px;height: 15px;}
+</style>
+
+<nav class="breadcrumb">
+	<i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> <?php echo $controllerName?> <span class="c-gray en">&gt;</span> <?php echo $actionName?> <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="mt-20">
+		<form class="form form-horizontal" id="form-logo-add" enctype="multipart/form-data">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">系统logo上传：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+				<span class="btn-upload form-group">
+				<input class="input-text upload-url" type="text" multiple="multiple" name="checkfile" readonly style="width:200px">
+				<a href="javascript:void();" class="btn btn-primary upload-btn"><i class="Hui-iconfont">&#xe642;</i> 选择文件</a>
+				<input type="file" multiple name="uploadfile" id="uploadfile" class="input-file">
+					<img class="loading" src="/static/h-ui.admin/images/loading.gif" style="display: none" />
+					<span class="f-12 c-danger">（支持png,jpg,gif格式，大小1M以内）</span>
+				</span>
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2"></label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<img id="iconImg" src="" style="display: none" />
+				</div>
+			</div>
+			<div class="row cl">
+				<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+					<button onClick="save_submit();" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<?php include_once(dirname(__FILE__) . "/../footer.html");?>
+<script type="text/javascript">
+    $(".loading").hide();
+function save_submit()
+{
+    var formData = new FormData();
+    formData.append('file', $('#uploadfile')[0].files[0]);
+    $(".loading").show();
+    $.ajax({
+		url: '',
+        data: formData,
+		type: "POST",
+		async: false,
+		cache: false,
+		contentType: false,
+		processData: false,
+		success: function(data) {
+            $(".loading").hide();
+            if (data.code != 0) {
+                layer.msg('上传失败!['+data.msg+']',{icon: 2,time:2000});
+			} else {
+                layer.msg('上传成功!',{icon: 1,time:2000});
+                $("#iconImg").attr("src", data.msg+'?'+Math.random()).show();
+			}
+		},
+		error: function(data) {
+            console.log(data);
+		}
+	})
+}
+</script>

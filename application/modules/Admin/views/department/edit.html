@@ -1,0 +1,61 @@
+<?php include_once(dirname(__FILE__) . "/../header.html");?>
+
+<article class="page-container">
+	<form action="" method="post" class="form form-horizontal" id="form-member-add">
+		<input type="hidden" id="department_id" name="department_id" value="<?php echo $row['id']?>">
+		<div class="row cl">
+			<label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>&nbsp;部门名称：</label>
+			<div class="formControls col-xs-9 col-sm-9">
+				<input type="text" class="input-text" value="<?php echo $row['name']?>" placeholder="" id="department_name" name="department_name">
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-9 col-sm-9 col-xs-offset-3 col-sm-offset-3">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</article>
+
+<?php include_once(dirname(__FILE__) . "/../footer.html");?>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#form-member-add").validate({
+            rules:{
+                department_name:{
+                    required:true,
+                    minlength:2,
+                    maxlength:16
+                },
+            },
+            submitHandler:function(form){
+                var id = $('#department_id').val();
+                var name = $('#department_name').val();
+                $.ajax({
+                    type: 'POST',
+                    url: '',
+                    data : {'name':name,'id':id},
+                    dataType: 'json',
+                    async: false,
+                    success: function(data){
+                        if(data.code != 0){
+                            layer.msg('修改失败!['+data.msg+']',{icon: 2,time:2000});
+						}else{
+                            layer.msg('修改成功!',{icon: 1,time:2000});
+                            setTimeout(function(){
+                                parent.location.reload();
+                                layer_close();
+                            },2000);
+						}
+                    },
+                    error:function(data) {
+                        console.log(data.msg);
+                    },
+                });
+            }
+        });
+    });
+</script>
